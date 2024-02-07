@@ -1,0 +1,21 @@
+header{
+    width: 100vw;
+    text-align: center;
+}
+.img-lampada{
+    width: 100vw;
+    text-align: center;
+}
+.style-button > button{
+    width: 20%;
+    padding: 10px;
+}
+
+.style-button{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}

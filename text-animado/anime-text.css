@@ -1,0 +1,72 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: deeppink;
+}
+.texto-animado{
+    font-size: 30px;
+    font-weight: 400;
+
+}
+.texto-animado h1 > span{
+   
+    position: relative;
+}
+.texto-animado h1>span::before{
+    content: "";
+    color: azure;
+    animation: palavra 12s infinite;
+
+}
+.texto-animado h1>span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 29px);
+    border-left: 2px solid deeppink;
+    right: -10%;
+    animation: cursor 0.5s infinite,digita 12s steps(15) infinite;
+    background-color: black;
+
+}
+@keyframes cursor{
+0%{
+    border-left: 2px solid deeppink;
+}
+}
+@keyframes palavra{
+    0%,20%{
+        content: "borra la";
+    }
+    21%,40%{
+        content: "cauma ai";
+    }
+    41%,60%{
+         content: "ta vendo ai";
+    }
+    61%,80%{
+         content: "sei nao em";
+    }
+    81%,100%{
+         content: "agora sim";
+    }
+
+}
+@keyframes digita {
+    10% , 15% , 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0%;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 29px);
+    }
+    
+}

@@ -1,0 +1,76 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body{
+   max-width: 100%;
+}
+                                /*CABEÇA*/
+.comteiner{
+   
+    width: 100vw;
+    overflow: hidden;
+}
+.menu{
+
+    padding: 10px;
+    height: 8vh;
+    background: rgb(207,22,255);
+background: linear-gradient(59deg, rgba(207,22,255,1) 15%, rgba(251,234,255,0.9977477477477478) 44%, rgba(240,233,255,1) 54%, rgba(1,185,222,1) 82%);
+}
+.menu img{
+height: 1.5rem;
+padding-right: 1vw;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;   
+}
+.menu a{
+color: rgb(133, 2, 255);
+text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.542);
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: 600;
+cursor: pointer;
+position: relative;
+}
+.menu nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    background: rgb(152,8,190);
+background: linear-gradient(270deg, rgba(152,8,190,1) 15%, rgba(201,167,218,0.9977477477477478) 51%, rgba(152,169,255,1) 67%, rgba(38,190,221,1) 82%);
+}
+.menu a:hover::after{
+    width: 100%;
+}
+section{
+    padding: 25px;
+}
