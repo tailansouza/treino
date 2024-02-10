@@ -7,12 +7,62 @@
 body{
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
     justify-content: center;
-    background-color: black;
+    background-size:cover;
+    background-repeat: no-repeat;
     color: deeppink;
 }
+.fundo-perfil{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: first baseline;
+   background-color:#282828;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+.fundo-foto{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 20%;
+    height: 20%;
+    
+    background: rgb(167,56,41);
+    background: radial-gradient(circle, rgba(167,56,41,1) 0%, rgba(255,181,27,1) 97%);
+    border-radius: 50% 50% 50% 50% / 12% 12% 88% 88% ;
+    border: 2px solid #dfb849;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 20vw;
+    height: 5vh;
+    background-color: #dfb849;
+    border-radius:5px 0px 5px ;
+}
+.contato a{
+    font-weight: 700;
+    font-size: large;
+    color:#a73829;
+    text-decoration: none;
+    text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.354);
+    
+}
+   
+
 .texto-animado{
+    display: none;
     font-size: 30px;
     font-weight: 400;
 
