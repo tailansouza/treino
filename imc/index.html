@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+     <h1>Calculadora imc</h1>
+     <div class="form-grup">
+        <label for="nome">Nome:</label>
+        <input type="text"
+               name="nome"
+               id="nome"
+               class="input"
+               autofocus
+               required
+               />
+       </div>
+       <div class="form-grup">
+        <label for="idade">Idade:</label>
+        <input type="number"
+               min="0"
+               max="100"
+               name="idade"
+               id="idade"
+               class="input"
+               required>
+       </div>
+       <div class="form-grup">
+        <label for="peso">Peso:</label>
+        <input type="number"
+                step="0.1"
+                min="0.1"
+                max="200.0"
+                name="Peso"
+                id="peso"
+                class="input"
+                required>
+       </div>
+       <div class="form-grup">
+        <label for="altura">Altura:</label>
+        <input type="number"
+               step="0.01"
+                min="0.01"
+                max="2.70"
+                name="altura"
+                id="altura"
+                class="input"
+                required>
+       </div>
+       <!--botoes-->
+       <div class="form-grup">
+        <button
+        type="submit"
+        class="botao"
+        id="btnEnviar">
+        Enviar
+    </button>
+        <button
+        type="reset"
+        class="botao"
+        id="btnLimpar"
+        >Limpar
+    </button>
+       </div>
+       <div class="form-grup">
+        <label for="imc">IMC</label>
+        <input type="number"
+               name="imc"
+               id="imc"
+               value="0.0"
+               disabled>
+       <span id="aviso"></span>
+       </div>
+       <form>
+        <div id="resutado">
+            <h2 id="id" class="pessoa">IMC</h2>
+            <p id="nome" class="pessoa"></p>
+            <p id="idade" class="pessoa"></p>
+            <p id="peso" class="pessoa"></p>
+            <p id="altura" class="pessoa"></p>
+            <p id="imc" class="pessoa"></p>
+        </div>
+       </form>
+
+    </main>
+    <script src="Imc.js"></script>
+</body>
+</html>

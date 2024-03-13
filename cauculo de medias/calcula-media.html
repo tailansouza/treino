@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media</title>
+</head>
+<body>
+ <main>
+<section class="conteudo" id="formulario">
+    <h1>Caucular media</h1>
+    <form action="#" method="post">
+        <div class="form-grop">
+            <label for="nota1">Nota 1</label>
+            <input type="number"
+                   name="nota1"
+                   id="nota1"
+                   min="0.0"
+                   max="10"
+                   step="0.1"
+                   autofocus
+                   onblur='validarNumeroo(this)'/>
+        </div>
+        <div class="form-grop">
+            <label for="nota2">Nota 2</label>
+            <input type="number"
+                   name="nota2"
+                   id="nota2"
+                   min="0.0"
+                   max="10"
+                   step="0.1"
+                   autofocus
+                   onblur='validarNumeroo(this)'/>
+        </div>
+        <div class="form-grup">
+            <button class="botao" id="btnCalcular">Calcular</button>
+            <button type="reset" id="btnLimpar">Limpar</button>
+        </div>
+        <div class="form-grup">
+            <label for="media">Media</label>
+            <input type="number" name="media" id="media" value="" readonly>
+        </div>
+        <div class="form-grup">
+            <input type="text" name="situacao" class="cx" id="situacao" placeholder="situacao final"
+            readonly>
+        </div>
+
+    </form>
+    <p id="aviso" class=""></p>
+
+</section>
+ </main>
+ <script src="media.js"></script>   
+</body>
+</html>
